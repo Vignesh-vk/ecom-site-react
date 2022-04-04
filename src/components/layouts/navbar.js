@@ -29,30 +29,12 @@ export default class navbar extends React.Component {
                                 <li class="nav-item">
                                     <Link to="shop" class="nav-link">SHOP</Link>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        PAGE
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <div class="dropdown-content">
-                                            <div class="blog-pages">
-                                                <div class="heading">
-                                                    <h5 class="main-heading">Blog Pages</h5>
-                                                </div>
-                                                <div class="main-content">
-                                                    <ul class="list-unstyled">
-                                                        <li>
-                                                            <Link to="/contact-us">Contact-us</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link to="/faq">Faq</Link>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <li class="nav-item">
+                                    <Link to="/faq" class="nav-link disabled">FAQ</Link>
                                 </li>
+                                {/* <li class="nav-item">
+                                    <Link to="/contact-us" class="nav-link disabled">CONTACT</Link>
+                                </li> */}
                                 <li class="nav-item">
                                     <Link to="/cart" class="nav-link disabled">CART</Link>
                                 </li>
