@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="js-plugins/line-awesome/line-awesome/css/line-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="js-plugins/line-awesome/line-awesome/css/line-awesome-font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="js-plugins/OwlCarousel2-2.3.2/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="js-plugins/OwlCarousel2-2.3.2/dist/assets/owl.theme.default.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="js-plugins/line-awesome/line-awesome/css/line-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="js-plugins/line-awesome/line-awesome/css/line-awesome-font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="js-plugins/OwlCarousel2-2.3.2/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="js-plugins/OwlCarousel2-2.3.2/dist/assets/owl.theme.default.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/product.css">
+	<link rel="stylesheet" type="text/css" href="css/shop.css">
+	<link rel="stylesheet" type="text/css" href="css/account.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/contact-us.css">
+	<link rel="stylesheet" type="text/css" href="css/cart.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/Effect-exzoom/src/jquery.exzoom.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/ion.rangeSlider-2.2.0/css/ion.rangeSlider.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/ion.rangeSlider-2.2.0/css/ion.rangeSlider.skinFlat.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/ion.rangeSlider-2.2.0/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/faq.css">
+  <link rel="stylesheet" type="text/css" href="js-plugins/line-awesome/line-awesome/css/line-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="js-plugins/line-awesome/line-awesome/css/line-awesome-font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="js-plugins/OwlCarousel2-2.3.2/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="js-plugins/OwlCarousel2-2.3.2/dist/assets/owl.theme.default.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/product.css">
+	<link rel="stylesheet" type="text/css" href="css/shop.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/line-awesome/line-awesome/css/line-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/line-awesome/line-awesome/css/line-awesome-font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/Effect-exzoom/src/jquery.exzoom.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/OwlCarousel2-2.3.2/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/OwlCarousel2-2.3.2/dist/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/ion.rangeSlider-2.2.0/css/ion.rangeSlider.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/ion.rangeSlider-2.2.0/css/ion.rangeSlider.skinFlat.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/ion.rangeSlider-2.2.0/css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/product.css">
+	<link rel="stylesheet" type="text/css" href="css/shop.css">
+	<link rel="stylesheet" type="text/css" href="css/account.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/line-awesome/line-awesome/css/line-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/line-awesome/line-awesome/css/line-awesome-font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/Effect-exzoom/src/jquery.exzoom.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/OwlCarousel2-2.3.2/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/OwlCarousel2-2.3.2/dist/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/ion.rangeSlider-2.2.0/css/ion.rangeSlider.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/ion.rangeSlider-2.2.0/css/ion.rangeSlider.skinFlat.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/ion.rangeSlider-2.2.0/css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/product.css">
+	<link rel="stylesheet" type="text/css" href="css/shop.css">
+	<link rel="stylesheet" type="text/css" href="css/account.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/line-awesome/line-awesome/css/line-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/line-awesome/line-awesome/css/line-awesome-font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/Effect-exzoom/src/jquery.exzoom.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/OwlCarousel2-2.3.2/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/OwlCarousel2-2.3.2/dist/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/ion.rangeSlider-2.2.0/css/ion.rangeSlider.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/ion.rangeSlider-2.2.0/css/ion.rangeSlider.skinFlat.css">
+	<link rel="stylesheet" type="text/css" href="js-plugins/ion.rangeSlider-2.2.0/css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>E-Commerce</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/popper.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+  <script type="text/javascript" src="js-plugins/OwlCarousel2-2.3.2/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js-plugins/Effect-exzoom/src/jquery.exzoom.js"></script>
+	<script type="text/javascript" src="js-plugins/ion.rangeSlider-2.2.0/js/ion-rangeSlider/ion.rangeSlider.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/popper.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js-plugins/OwlCarousel2-2.3.2/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js-plugins/Effect-exzoom/src/jquery.exzoom.js"></script>
+	<script type="text/javascript" src="js-plugins/ion.rangeSlider-2.2.0/js/ion-rangeSlider/ion.rangeSlider.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/popper.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js-plugins/OwlCarousel2-2.3.2/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js-plugins/Effect-exzoom/src/jquery.exzoom.js"></script>
+	<script type="text/javascript" src="js-plugins/ion.rangeSlider-2.2.0/js/ion-rangeSlider/ion.rangeSlider.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/popper.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js-plugins/OwlCarousel2-2.3.2/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js-plugins/Effect-exzoom/src/jquery.exzoom.js"></script>
+	<script type="text/javascript" src="js-plugins/ion.rangeSlider-2.2.0/js/ion-rangeSlider/ion.rangeSlider.js"></script>
+  <script type="text/javascript">
+    $('.carousel').carousel()
+  </script>
+  <script type="text/javascript">
+    $(window).scroll(function() {    
+      var scroll = $(window).scrollTop();
+  
+      if (scroll >= 100) {
+          $(".navbar").addClass("navbar-color");
+      } else {
+          $(".navbar").removeClass("navbar-color");
+      }
+  });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".wish-list").click(function(){
+        $(".wish-list").removeClass('wish-active');
+        $(this).addClass('wish-active');
+      });
+  
+      var $window = $(window);
+      var windowsize = $window.width();
+  
+      function checkWidth() {
+            var windowsize = $window.width();
+            if(windowsize < 800) {
+              $('.navbar').addClass('sticky-top');
+              var element = $('.product-list-div div.row').find('div.col-lg-1');
+              
+              if(element.find('a').hasClass('left-icon') == false) {
+            $('.left-list').before('<a href="javascript:void(0)" class="left-icon"><i class="la la-angle-left"></i></a>');
+              }
+              if(element.find('a').hasClass('right-icon') == false) {
+            $('.left-list').after('<a href="javascript:void(0)" class="right-icon"><i class="la la-angle-right"></i></a>');
+              }
+        } else {
+            $('.navbar').removeClass('sticky-top');
+        }
+        }
+  
+        checkWidth();
+  
+        $(window).resize(checkWidth);	
+  
+        $('.right-icon').click(function() {
+          var pos = $('.left-list .nav').scrollLeft() + ($('.left-list .nav .nav-link').width() + 10);
+          $('.left-list .nav').animate({scrollLeft: pos},500);
+        })
+  
+        $('.left-icon').click(function() {
+          var pos = $('.left-list .nav').scrollLeft() - ($('.left-list .nav .nav-link').width() + 10);
+          $('.left-list .nav').animate({scrollLeft: pos},500);
+        })
+  
+    });
+  </script>
+  <script type="text/javascript">
+    $('.owl-carousel-1').owlCarousel({
+      loop:true,
+      margin:25,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1,
+              nav:false
+          },
+          600:{
+              items:3,
+              nav:false
+          },
+          1000:{
+              items:5,
+              nav:false,
+              loop:false
+          }
+      }
+  })
+  $('.play').on('click',function(){
+      owl.trigger('play.owl.autoplay',[1000])
+  })
+  $('.stop').on('click',function(){
+      owl.trigger('stop.owl.autoplay')
+  })
+  </script>
+  <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      autoplay:true,
+      autoplayTimeout:2000,
+      autoplayHoverPause:true,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1,
+              nav:true
+          },
+          600:{
+              items:2,
+              nav:false
+          },
+          1000:{
+              items:3,
+              nav:false,
+              loop:true
+          }
+      }
+  })
+  $('.play').on('click',function(){
+      owl.trigger('play.owl.autoplay',[1000])
+  })
+  $('.stop').on('click',function(){
+      owl.trigger('stop.owl.autoplay')
+  })  
+  </script>
+
+<script type="text/javascript">
+	$('.carousel').carousel()
+</script>
+<script type="text/javascript">
+	$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 100) {
+        $(".navbar").addClass("navbar-color");
+    } else {
+        $(".navbar").removeClass("navbar-color");
+    }
+});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".wish-list").click(function(){
+			$(".wish-list").removeClass('wish-active');
+			$(this).addClass('wish-active');
+		});
+
+		var $window = $(window);
+		var windowsize = $window.width();
+
+		function checkWidth() {
+	        var windowsize = $window.width();
+	        if(windowsize < 800) {
+	        	$('.navbar').addClass('sticky-top');
+	        	var element = $('.product-list-div div.row').find('div.col-lg-1');
+	        	
+	        	if(element.find('a').hasClass('left-icon') == false) {
+					$('.left-list').before('<a href="javascript:void(0)" class="left-icon"><i class="la la-angle-left"></i></a>');
+	        	}
+	        	if(element.find('a').hasClass('right-icon') == false) {
+					$('.left-list').after('<a href="javascript:void(0)" class="right-icon"><i class="la la-angle-right"></i></a>');
+	        	}
+			} 
+			// else {
+		 //    	$('.navbar').removeClass('sticky-top');
+			// }
+	    }
+
+	    checkWidth();
+
+	    $(window).resize(checkWidth);	
+
+	    $('.right-icon').click(function() {
+	    	var pos = $('.left-list .nav').scrollLeft() + ($('.left-list .nav .nav-link').width() + 10);
+    		$('.left-list .nav').animate({scrollLeft: pos},500);
+	    })
+
+	    $('.left-icon').click(function() {
+	    	var pos = $('.left-list .nav').scrollLeft() - ($('.left-list .nav .nav-link').width() + 10);
+    		$('.left-list .nav').animate({scrollLeft: pos},500);
+	    })
+
+	});
+
+
+	$(function(){
+
+	  $("#exzoom").exzoom({
+
+	    // thumbnail nav options
+	    "navWidth": 60,
+	    "navHeight": 60,
+	    "navItemNum": 5,
+	    "navItemMargin": 7,
+	    "navBorder": 1,
+
+	    // autoplay
+	    "autoPlay": false,
+
+	    // autoplay interval in milliseconds
+	    "autoPlayTimeout": 2000
+	    
+	  });
+
+	});
+</script>
+<script type="text/javascript">
+	$('.owl-carousel-2').owlCarousel({
+    loop:true,
+    margin:20,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:4,
+            nav:false,
+            loop:true
+        }
+    }
+})
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+</script>
+
+<script type="text/javascript">
+	$('.owl-carousel-1').owlCarousel({
+    loop:true,
+    margin:25,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:false,
+            loop:false
+        }
+    }
+})
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+</script>
+<script type="text/javascript">
+	$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:false,
+            loop:true
+        }
+    }
+})
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+
+
+$("#range_03").ionRangeSlider({
+    type: "double",
+    grid: true,
+    min: 0,
+    max: 20000,
+    from: 1500,
+    to: 15000,
+    prefix: "$"
+});
+
+</script>
+<script type="text/javascript">
+	$('.carousel').carousel()
+</script>
+<script type="text/javascript">
+	$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 100) {
+        $(".navbar").addClass("navbar-color");
+    } else {
+        $(".navbar").removeClass("navbar-color");
+    }
+});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".wish-list").click(function(){
+			$(".wish-list").removeClass('wish-active');
+			$(this).addClass('wish-active');
+		});
+
+		var $window = $(window);
+		var windowsize = $window.width();
+
+		function checkWidth() {
+	        var windowsize = $window.width();
+	        if(windowsize < 800) {
+	        	$('.navbar').addClass('sticky-top');
+	        	var element = $('.product-list-div div.row').find('div.col-lg-1');
+	        	
+	        	if(element.find('a').hasClass('left-icon') == false) {
+					$('.left-list').before('<a href="javascript:void(0)" class="left-icon"><i class="la la-angle-left"></i></a>');
+	        	}
+	        	if(element.find('a').hasClass('right-icon') == false) {
+					$('.left-list').after('<a href="javascript:void(0)" class="right-icon"><i class="la la-angle-right"></i></a>');
+	        	}
+			} 
+			// else {
+		 //    	$('.navbar').removeClass('sticky-top');
+			// }
+	    }
+
+	    checkWidth();
+
+	    $(window).resize(checkWidth);	
+
+	    $('.right-icon').click(function() {
+	    	var pos = $('.left-list .nav').scrollLeft() + ($('.left-list .nav .nav-link').width() + 10);
+    		$('.left-list .nav').animate({scrollLeft: pos},500);
+	    })
+
+	    $('.left-icon').click(function() {
+	    	var pos = $('.left-list .nav').scrollLeft() - ($('.left-list .nav .nav-link').width() + 10);
+    		$('.left-list .nav').animate({scrollLeft: pos},500);
+	    })
+
+	});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		 $(".edt-btn").click(function () {
+	        $(".prfile-main .prfile").css("display","none")
+	        $(".prfile-main .prfile-edit").css("display","block")
+	        // $("#").show();   
+	    });
+
+	    $(".save-btn").click(function () {
+	        $(".prfile-main .prfile").css("display","block")
+	        $(".prfile-main .prfile-edit").css("display","none")
+	        // $("#").show();   
+	    });
+	});
+</script>
+    <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
