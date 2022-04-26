@@ -1,15 +1,33 @@
 import React from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
-export default class navbar extends React.Component {
+import { AC_VIEW_USER } from '../../actions/account';
+class navbar extends React.Component {
     constructor(props) {
         super(props);
+        this.state={
+            viewStatus: false,
+            viewId:'',
+            accountId:''
+        }
         this.logout = this.logout.bind(this)
+        this.view=this.view.bind(this)
     }
         logout(){
             localStorage.clear();
             <Redirect to={"/"} />
         }
+        view(event) {
+            let accountId = event.target.id;
+            this.setState({ viewStatus: true, viewId: accountId })
+        }
     render() {
+        var account=this.props.accountReducer.accountInfo
+        console.log("Account ======",account);
+        if (this.state.viewStatus) {
+            return <Redirect to={"/account/" + this.state.viewId} />
+        }
         return (
             <div class="main-body">
                 <nav class="navbar navbar-expand-lg fixed-top navbar-light">
@@ -27,22 +45,22 @@ export default class navbar extends React.Component {
                                     <Link to="/" class="nav-link">HOME <span class="sr-only">(current)</span></Link>
                                 </li>
                                 <li class="nav-item">
-                                    <Link to="shop" class="nav-link">SHOP</Link>
+                                    <Link to="/shop" class="nav-link">SHOP</Link>
                                 </li>
                                 <li class="nav-item">
-                                    <Link to="/faq" class="nav-link disabled">FAQ</Link>
+                                    <Link to="/faq" class="nav-link">FAQ</Link>
                                 </li>
                                 {/* <li class="nav-item">
                                     <Link to="/contact-us" class="nav-link disabled">CONTACT</Link>
                                 </li> */}
                                 <li class="nav-item">
-                                    <Link to="/cart" class="nav-link disabled">CART</Link>
+                                    <Link to="/cart" class="nav-link">CART</Link>
                                 </li>
                                 <li class="nav-item">
-                                    <Link to="/account" class="nav-link disabled">ACCOUNT</Link>
+                                    <a id={account._id} onClick={this.view} class="nav-link">ACCOUNT</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link disabled" onClick={this.logout}>LOG OUT</a>
+                                    <a class="nav-link" onClick={this.logout}>LOG OUT</a>
                                 </li>
                             </ul>
                         </div>
@@ -52,3 +70,13 @@ export default class navbar extends React.Component {
         )
     }
 }
+function mapStateToProps(state) {
+    console.log('map state', state);
+    return {
+        accountReducer: state.ACCOUNT_Reducer
+    }
+}
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({ AC_VIEW_USER }, dispatch)
+}
+export default connect(mapStateToProps, mapDispatchToProps)(navbar);

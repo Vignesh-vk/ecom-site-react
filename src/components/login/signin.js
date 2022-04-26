@@ -2,7 +2,7 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { AC_REGISTER, AC_LOGIN } from '../../actions/user';
-import swal from 'sweetalert';
+// import swal from 'sweetalert';
 class login extends React.Component {
 	constructor(props) {
 		super(props);
@@ -79,21 +79,6 @@ class login extends React.Component {
 		else {
 			this.setState({ passwordError: true, color1: "red" })
 		}
-		if (email && password && name && mobile) {
-			swal("Account registered successfully!", {
-				buttons: false,
-				timer: 2000,
-				icon: "success"
-			});
-			this.setState({ email: '', password: '', name: '', mobile: '' });
-		} else {
-			swal("Please enter valid details", {
-				buttons: false,
-				timer: 2000,
-				icon: "error"
-			});
-			console.log(this.props.userreducer.userInfo)
-		}
 		const formData = {
 			email: this.state.email,
 			password: this.state.password,
@@ -129,20 +114,6 @@ class login extends React.Component {
 		}
 		else {
 		  this.setState({ passwordError: true,color1: "red" })
-		}
-		if (email &&  password) {
-		  swal("Login Success!", {
-			buttons: false,
-			timer: 2000,
-			icon:"success"
-		  });
-		   this.setState({ email: '', password: '' });
-		}else{
-		  swal("Please enter email and password", {
-			buttons: false,
-			timer: 2000,
-			icon:"error"
-		  });
 		}
 		const formData = {
 		  email: this.state.email,
@@ -261,7 +232,7 @@ class login extends React.Component {
 								<div class="flex-div">
 									<div class="left">
 										<div class="heading">
-											<h6 class="main-header">E-Commers</h6>
+											<h6 class="main-header">E-Commerce</h6>
 										</div>
 									</div>
 									<div class="right">
@@ -284,7 +255,7 @@ class login extends React.Component {
 								<div class="login">
 									<div class="inner-div">
 										<div class="heading">
-											<h3 class="main-header">E-Commers</h3>
+											<h3 class="main-header">E-Commerce</h3>
 										</div>
 										<div class="tab-content" id="pills-tabContent">
 											<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">

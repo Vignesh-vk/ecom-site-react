@@ -1,10 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
 export default class Header extends React.Component {
     render() {
         return (
             <div class="main-body">
-                {/* <section class="slider-sec">
+                <section class="slider-sec">
                     <div class="banner-back">
                         <img src="images/banner.jpg" alt="no images" />
                     </div>
@@ -17,19 +16,19 @@ export default class Header extends React.Component {
                                             <div class="flex-div">
                                                 <div class="top ">
                                                     <div class="arrow-img">
-                                                        <img src="images/images/arrow1.png" />
+                                                        <img src="images/images/arrow1.png" alt="no images"/>
                                                     </div>
                                                     <p class="sub-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                                 </div>
                                                 <div class="middle">
                                                     <div class="arrow-img">
-                                                        <img src="images/images/arrow1.png" />
+                                                        <img src="images/images/arrow1.png" alt="no images"/>
                                                     </div>
                                                     <p class="sub-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                                 </div>
                                                 <div class="bottom">
                                                     <div class="arrow-img">
-                                                        <img src="images/images/arrow1.png" />
+                                                        <img src="images/images/arrow1.png" alt="no images"/>
                                                     </div>
                                                     <p class="sub-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                                 </div>
@@ -44,19 +43,19 @@ export default class Header extends React.Component {
                                             <div class="flex-div">
                                                 <div class="top ">
                                                     <div class="arrow-img">
-                                                        <img src="images/images/arrow1.png" />
+                                                        <img src="images/images/arrow1.png" alt="no images"/>
                                                     </div>
                                                     <p class="sub-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                                 </div>
                                                 <div class="middle">
                                                     <div class="arrow-img">
-                                                        <img src="images/images/arrow1.png" />
+                                                        <img src="images/images/arrow1.png" alt="no images"/>
                                                     </div>
                                                     <p class="sub-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                                 </div>
                                                 <div class="bottom">
                                                     <div class="arrow-img">
-                                                        <img src="images/images/arrow1.png" />
+                                                        <img src="images/images/arrow1.png" alt="no images"/>
                                                     </div>
                                                     <p class="sub-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                                 </div>
@@ -72,19 +71,19 @@ export default class Header extends React.Component {
                                             <div class="flex-div">
                                                 <div class="top ">
                                                     <div class="arrow-img">
-                                                        <img src="images/images/arrow1.png" />
+                                                        <img src="images/images/arrow1.png" alt="no images"/>
                                                     </div>
                                                     <p class="sub-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                                 </div>
                                                 <div class="middle">
                                                     <div class="arrow-img">
-                                                        <img src="images/images/arrow1.png" />
+                                                        <img src="images/images/arrow1.png" alt="no images"/>
                                                     </div>
                                                     <p class="sub-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
                                                 </div>
                                                 <div class="bottom">
                                                     <div class="arrow-img">
-                                                        <img src="images/images/arrow1.png" />
+                                                        <img src="images/images/arrow1.png" alt="no images"/>
                                                     </div>
                                                     <p class="sub-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                                                 </div>
@@ -92,26 +91,26 @@ export default class Header extends React.Component {
                                         </div>
                                         <div class="middle">
                                             <div class="main-img">
-                                                <img src="images/p3.png" alt="no img" />
+                                                <img src="images/p3.png" alt="no images"/>
                                             </div>
                                         </div>
                                         <div class="right">
                                             <div class="flex-div">
                                                 <div class="top">
                                                     <div class="arrow-img">
-                                                        <img src="images/images/arrow1.png" />
+                                                        <img src="images/images/arrow1.png" alt="no images"/>
                                                     </div>
                                                     <p class="sub-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                                 </div>
                                                 <div class="middle">
                                                     <div class="arrow-img">
-                                                        <img src="images/images/arrow1.png" />
+                                                        <img src="images/images/arrow1.png" alt="no images"/>
                                                     </div>
                                                     <p class="sub-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                                 </div>
                                                 <div class="bottom">
                                                     <div class="arrow-img">
-                                                        <img src="images/images/arrow1.png" />
+                                                        <img src="images/images/arrow1.png" alt="no images"/>
                                                     </div>
                                                     <p class="sub-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                                 </div>
@@ -127,19 +126,19 @@ export default class Header extends React.Component {
                                             <div class="flex-div text-center">
                                                 <div class="top ">
                                                     <div class="arrow-img">
-                                                        <img src="images/images/arrow1.png" />
+                                                        <img src="images/images/arrow1.png" alt="no images"/>
                                                     </div>
                                                     <p class="sub-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                                 </div>
                                                 <div class="middle">
                                                     <div class="arrow-img">
-                                                        <img src="images/images/arrow1.png" />
+                                                        <img src="images/images/arrow1.png" alt="no images"/>
                                                     </div>
                                                     <p class="sub-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                                 </div>
                                                 <div class="bottom">
                                                     <div class="arrow-img">
-                                                        <img src="images/images/arrow1.png" />
+                                                        <img src="images/images/arrow1.png" alt="no images"/>
                                                     </div>
                                                     <p class="sub-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
                                                 </div>
@@ -154,19 +153,19 @@ export default class Header extends React.Component {
                                             <div class="flex-div text-center">
                                                 <div class="top ">
                                                     <div class="arrow-img">
-                                                        <img src="images/images/arrow1.png" />
+                                                        <img src="images/images/arrow1.png" alt="no images"/>
                                                     </div>
                                                     <p class="sub-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
                                                 </div>
                                                 <div class="middle">
                                                     <div class="arrow-img">
-                                                        <img src="images/images/arrow1.png" />
+                                                        <img src="images/images/arrow1.png" alt="no images"/>
                                                     </div>
                                                     <p class="sub-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  </p>
                                                 </div>
                                                 <div class="bottom">
                                                     <div class="arrow-img">
-                                                        <img src="images/images/arrow1.png" />
+                                                        <img src="images/images/arrow1.png" alt="no images"/>
                                                     </div>
                                                     <p class="sub-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                                                 </div>
@@ -176,16 +175,16 @@ export default class Header extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                        {/* <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
                             <span class="la la-angle-left" aria-hidden="true" style="font-size: 50px;"></span>
                             <span class="sr-only">Previous</span>
                         </a>
                         <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
                             <span class="la la-angle-right" style="font-size: 50px;" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
-                        </a>
+                        </a> */}
                     </div>
-                </section> */}
+                </section>
 
 <section class="banner-sec">
 		<div class="container">

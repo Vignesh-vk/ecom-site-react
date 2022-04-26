@@ -10,6 +10,7 @@ import Cart from './components/cart/cart'
 import Faq from './components/faq/faq';
 import Shop from './components/shop/shop'
 import Account from './components/account/account';
+import policy from './components/layouts/pages/policy';
 
 class mainboard extends React.Component{
   render(){
@@ -23,7 +24,8 @@ class mainboard extends React.Component{
       <Route exact path="/cart" component={Cart} />
       <Route exact path="/faq" component={Faq}/>
       <Route exact path="/shop" component={Shop}/>
-      <Route exact path="/account" component={Account}/>
+      <Route exact path="/account/:id" component={Account}/>
+      <Route exact path="/policy" component={policy}/>
       </Switch>
       <Footer/>
       </Router>

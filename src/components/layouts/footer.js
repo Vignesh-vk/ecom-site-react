@@ -1,7 +1,28 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
-export default class footer extends React.Component {
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { AC_VIEW_POLICY } from '../../actions/pages/policy';
+class footer extends React.Component {
+	constructor(props) {
+        super(props);
+        this.state = {
+            viewId:'',
+			pageId:'',
+			viewStatus:false
+        }
+        this.viewPage = this.viewPage.bind(this);
+	}
+	viewPage(event) {
+        let pageId = event.target.id;
+        this.setState({ viewStatus: true, viewId: pageId })
+    }
     render() {
+        // var page = this.props.policyReducer.listPolicy;
+		// console.log("===================",page);
+		if (this.state.viewStatus) {
+            return <Redirect to={"/policy/" + this.state.viewId} />
+        }
         return (
             <div class="main-body">
 <footer>
@@ -242,14 +263,14 @@ export default class footer extends React.Component {
 							<div class="col-lg-3">
 								<div class="news">
 									<div class="heading">
-										<h5 class="main-heading">POPULAR NEWS</h5>
+										<h5 class="main-heading">PAGES</h5>
 									</div>
 									<ul class="list-unstyled">
 										<li>
-											<a href="javascript:void(0)">
+											<a onClick={this.viewPage}>
 												<div class="flex-div">
 													<span class="icon"><i class="la la-dot-circle-o"></i></span>
-													<p class="sub-content">Tour de France 2018</p> 
+													<p class="sub-content">Return Policy</p> 
 												</div>
 											</a>
 										</li>
@@ -257,7 +278,7 @@ export default class footer extends React.Component {
 											<a href="javascript:void(0)">
 												<div class="flex-div">
 													<span class="icon"><i class="la la-dot-circle-o"></i></span>
-													<p class="sub-content">Tour de France 2018</p> 
+													<p class="sub-content">Terms of use</p> 
 												</div>
 											</a>
 										</li>
@@ -265,7 +286,7 @@ export default class footer extends React.Component {
 											<a href="javascript:void(0)">
 												<div class="flex-div">
 													<span class="icon"><i class="la la-dot-circle-o"></i></span>
-													<p class="sub-content">Tour de France 2018</p> 
+													<p class="sub-content">Security</p> 
 												</div>
 											</a>
 										</li>
@@ -273,79 +294,7 @@ export default class footer extends React.Component {
 											<a href="javascript:void(0)">
 												<div class="flex-div">
 													<span class="icon"><i class="la la-dot-circle-o"></i></span>
-													<p class="sub-content">Tour de France 2018</p> 
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0)">
-												<div class="flex-div">
-													<span class="icon"><i class="la la-dot-circle-o"></i></span>
-													<p class="sub-content">Tour de France 2018</p> 
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0)">
-												<div class="flex-div">
-													<span class="icon"><i class="la la-dot-circle-o"></i></span>
-													<p class="sub-content">Tour de France 2018</p> 
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0)">
-												<div class="flex-div">
-													<span class="icon"><i class="la la-dot-circle-o"></i></span>
-													<p class="sub-content">Tour de France 2018</p> 
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0)">
-												<div class="flex-div">
-													<span class="icon"><i class="la la-dot-circle-o"></i></span>
-													<p class="sub-content">Tour de France 2018</p> 
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0)">
-												<div class="flex-div">
-													<span class="icon"><i class="la la-dot-circle-o"></i></span>
-													<p class="sub-content">Tour de France 2018</p> 
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0)">
-												<div class="flex-div">
-													<span class="icon"><i class="la la-dot-circle-o"></i></span>
-													<p class="sub-content">Tour de France 2018</p> 
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0)">
-												<div class="flex-div">
-													<span class="icon"><i class="la la-dot-circle-o"></i></span>
-													<p class="sub-content">Tour de France 2018</p> 
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0)">
-												<div class="flex-div">
-													<span class="icon"><i class="la la-dot-circle-o"></i></span>
-													<p class="sub-content">Tour de France 2018</p> 
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="javascript:void(0)">
-												<div class="flex-div">
-													<span class="icon"><i class="la la-dot-circle-o"></i></span>
-													<p class="sub-content">Tour de France 2018</p> 
+													<p class="sub-content">Privacy</p> 
 												</div>
 											</a>
 										</li>
@@ -432,3 +381,13 @@ export default class footer extends React.Component {
     )
     }
     }
+	function mapStateToProps(state) {
+		console.log('map state =====================', state);
+		return {
+			POLICY_Reducer: state.POLICY_Reducer
+		}
+	}
+	function mapDispatchToProps(dispatch) {
+		return bindActionCreators({ AC_VIEW_POLICY }, dispatch)
+	}
+	export default connect(mapStateToProps, mapDispatchToProps)(footer)
